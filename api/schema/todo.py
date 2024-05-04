@@ -4,7 +4,7 @@ from tortoise.contrib.pydantic import pydantic_model_creator
 from api.model.todo import Todo
 
 #Creating model
-GetTodo = pydantic_model_creator(None, name="Todo")
+GetTodo = pydantic_model_creator(Todo, name="Todo")
 
 
 """
