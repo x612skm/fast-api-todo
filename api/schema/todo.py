@@ -25,5 +25,5 @@ class PostTodo(BaseModel):
 
 
 class PutTodo(BaseModel):
-    task: Optional[str] = Field(None, max_length=100)
+    task: Optional[str] = Field(Todo, max_length=100)
     done: Optional[bool]
